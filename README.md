@@ -36,16 +36,19 @@ A fast, lightweight image manager for large libraries. Native speed, instant sea
 - Folder pull rules — automatically sync images into collections by tag filter
 - Custom user tags stored separately from parsed metadata tags
 - Tag cloud sidebar with category-based coloring (55,000+ Danbooru tag reference)
+- Soft delete & trash — recoverable image deletion
 
 **Metadata**
 - Automatic PNG metadata extraction (A1111/Forge generation parameters, prompts, seeds, models, LoRAs)
 - Tag parser handles weight syntax, LoRA references, and multi-tag weight groups
+- Source URL tracking for imported images (Danbooru, Pixiv, DeviantArt)
 - Non-destructive — your original files are never modified
 
 **Integration**
 - User scripts — drop `.bat`, `.ps1`, `.py`, or `.sh` files into the scripts folder, bind keyboard shortcuts, open images in external editors
 - File watcher — real-time detection of new images with auto-indexing
-- Drag-and-drop import from file explorer or URLs
+- Drag-and-drop import from file explorer or URLs (Danbooru, Pixiv, DeviantArt, Discord, etc.)
+- URL drop queuing — drop multiple images in sequence without losing any
 
 **Polish**
 - System tray with minimize-to-tray, single instance
@@ -90,7 +93,7 @@ The image path is passed as the first argument. Metadata is available via enviro
 | `WINDHOVER_MODEL` | Generation model |
 | `WINDHOVER_SEED` | Seed value |
 
-Assign keyboard shortcuts to each script in Settings > Scripts.
+Assign keyboard shortcuts to each script in Settings > Scripts. See the [full script documentation](docs/scripts.md) for more details.
 
 ## Tech Stack
 
